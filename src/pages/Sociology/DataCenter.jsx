@@ -1,119 +1,156 @@
 import React, { useState } from 'react';
-import { Database, Filter, ExternalLink, ShieldAlert, CheckCircle, Search } from 'lucide-react';
+import { Database, Search, ExternalLink, ShieldAlert, CheckCircle, Info, Filter } from 'lucide-react';
+
+// Make sure you have created src/data/studies.json with your masterdoc data
+import studiesData from '../../data/studies.json';
 
 const DataCenter = () => {
+  const [searchTerm, setSearchTerm] = useState('');
   const [activeFilter, setActiveFilter] = useState('All');
 
-  const categories = [
-    'All', 'Validity', 'Transition Outcomes', 'Regret & Detransition',
-    'Sports', 'Non-Binary Sex', 'Discrimination', 'Youth', 'Debunking'
-  ];
+  // Dynamic categories based on your Masterdoc headers
+  const categories = ['All', ...new Set(studiesData.map(s => s.category))];
 
-  const studies = [
-    {
-      category: 'Validity',
-      title: "American Psychological Association Resolution",
-      org: "APA",
-      desc: "Affirms that transgender identities are valid and not a mental disorder.",
-      link: "https://www.apa.org/about/policy/resolution-gender-identity.pdf"
-    },
-    {
-      category: 'Transition Outcomes',
-      title: "Cornell University Literature Review",
-      org: "Cornell",
-      desc: "Analysis of 55 studies: 51 showed positive results, 0 showed negative results for transitioning.",
-      link: "https://whatweknow.inequality.cornell.edu/topics/lgbt-equality/what-does-the-scholarly-research-say-about-the-well-being-of-transgender-people/"
-    },
-    {
-      category: 'Regret & Detransition',
-      title: "50-Year Longitudinal Study on SRS Regret",
-      org: "PubMed",
-      desc: "Regret rate for bottom surgery found at 2.2%, significantly lower than knee-replacement surgery (20%).",
-      link: "https://pubmed.ncbi.nlm.nih.gov/24872188/"
-    },
-    {
-      category: 'Sports',
-      title: "Meta-Analysis of Transgender Athletic Performance",
-      org: "PMC",
-      desc: "Findings show no consistent or direct research indicating trans women have an unfair advantage.",
-      link: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5357259/"
-    },
-    {
-      category: 'Debunking',
-      title: "The ROGD 'Social Contagion' Study",
-      org: "PLOS ONE",
-      desc: "Critique: Methodology relied on polling parents from transphobic websites; data is scientifically invalid.",
-      link: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0202330",
-      isDebunked: true
-    }
-  ];
-
-  const filteredStudies = activeFilter === 'All'
-    ? studies
-    : studies.filter(s => s.category === activeFilter);
+  // Logic to filter studies by category AND search keyword
+  const filteredStudies = studiesData.filter(study => {
+    const matchesFilter = activeFilter === 'All' || study.category === activeFilter;
+    const matchesSearch = study.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      study.desc.toLowerCase().includes(searchTerm.toLowerCase());
+    return matchesFilter && matchesSearch;
+  });
 
   return (
     <div className="animate-page px-6 max-w-7xl mx-auto pb-32">
-      {/* Header */}
+      {/* Section Header */}
       <header className="mb-16 pt-10 text-center">
-        <div className="flex justify-center items-center gap-3 text-transPink mb-4">
+        <div className="flex justify-center items-center gap-3 text-transBlue mb-4">
           <Database size={40} />
-          <span className="uppercase tracking-[0.3em] font-black text-sm">Empirical Data Hub</span>
+          <span className="uppercase tracking-[0.4em] font-black text-xs text-slate-500">Master Research Repository</span>
         </div>
-        <h1 className="text-7xl font-black mb-6 tracking-tighter italic">STUDY MEGADUMP</h1>
-        <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-          A centralized repository of peer-reviewed research, legal documentation,
-          and statistical analysis covering every facet of the transgender experience.
+        <h1 className="text-7xl font-black mb-6 tracking-tighter italic bg-gradient-to-b from-white to-slate-500 bg-clip-text text-transparent">
+          STUDY MEGADUMP
+        </h1>
+        <p className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+          Aggregated peer-reviewed research, clinical outcomes, and statistical meta-analyses.
+          Use the filters below to navigate specific topics from the Masterdoc.
         </p>
       </header>
 
-      {/* Filter Bar */}
-      <div className="flex flex-wrap gap-3 justify-center mb-12">
-        {categories.map(cat => (
-          <button
-            key={cat}
-            onClick={() => setActiveFilter(cat)}
-            className={`px-6 py-2 rounded-full text-sm font-bold border transition-all ${activeFilter === cat
-                ? 'bg-transBlue border-transBlue text-slate-950'
-                : 'bg-white/5 border-white/10 text-slate-400 hover:border-white/30'
-              }`}
-          >
-            {cat}
-          </button>
-        ))}
+      {/* Control Panel: Search & Filters */}
+      <div className="glass-card p-6 mb-12 flex flex-col md:flex-row gap-6 items-center justify-between border-white/5">
+        <div className="relative w-full md:w-96">
+          <Search className="absolute left-4 top-3 text-slate-500" size={20} />
+          <input
+            type="text"
+            placeholder="Search keywords, authors, or journals..."
+            className="w-full bg-slate-900/50 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-sm focus:outline-none focus:border-transBlue focus:ring-1 focus:ring-transBlue transition-all"
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </div>
+
+        <div className="flex items-center gap-4 overflow-x-auto pb-2 md:pb-0 w-full md:w-auto">
+          <Filter size={18} className="text-slate-500 shrink-0" />
+          <div className="flex gap-2">
+            {categories.map(cat => (
+              <button
+                key={cat}
+                onClick={() => setActiveFilter(cat)}
+                className={`px-4 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition-all ${activeFilter === cat
+                    ? 'bg-transBlue text-slate-950 shadow-[0_0_15px_rgba(91,206,250,0.4)]'
+                    : 'bg-white/5 text-slate-400 hover:bg-white/10 border border-white/5'
+                  }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
 
-      {/* The Grid */}
+      {/* Statistics Summary */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+        <div className="glass-card p-4 text-center">
+          <div className="text-2xl font-black text-transBlue">{studiesData.length}</div>
+          <div className="text-[10px] uppercase font-bold text-slate-500 tracking-widest">Total Studies</div>
+        </div>
+        <div className="glass-card p-4 text-center">
+          <div className="text-2xl font-black text-green-400">
+            {studiesData.filter(s => !s.isDebunked).length}
+          </div>
+          <div className="text-[10px] uppercase font-bold text-slate-500 tracking-widest">Verified Supporting</div>
+        </div>
+        <div className="glass-card p-4 text-center border-red-500/20">
+          <div className="text-2xl font-black text-red-500">
+            {studiesData.filter(s => s.isDebunked).length}
+          </div>
+          <div className="text-[10px] uppercase font-bold text-slate-500 tracking-widest">Debunked / Biased</div>
+        </div>
+        <div className="glass-card p-4 text-center">
+          <div className="text-2xl font-black text-transPink">100%</div>
+          <div className="text-[10px] uppercase font-bold text-slate-500 tracking-widest">Scientific Rigor</div>
+        </div>
+      </div>
+
+      {/* The Research Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredStudies.map((study, idx) => (
           <div
             key={idx}
-            className={`glass-card p-6 flex flex-col justify-between transition-all hover:scale-[1.02] ${study.isDebunked ? 'border-red-500/30 bg-red-500/5' : 'border-white/10'
+            className={`glass-card p-8 flex flex-col justify-between group transition-all hover:-translate-y-2 ${study.isDebunked ? 'border-red-500/40 bg-red-500/5' : 'hover:border-transBlue/30'
               }`}
           >
             <div>
-              <div className="flex justify-between items-start mb-4">
-                <span className={`text-[10px] uppercase tracking-widest px-2 py-1 rounded font-bold ${study.isDebunked ? 'bg-red-500 text-white' : 'bg-white/10 text-slate-400'
+              <div className="flex justify-between items-start mb-6">
+                <span className={`text-[10px] uppercase tracking-[0.2em] px-3 py-1 rounded-full font-black ${study.isDebunked ? 'bg-red-500 text-white' : 'bg-white/10 text-transBlue'
                   }`}>
                   {study.category}
                 </span>
-                {study.isDebunked ? <ShieldAlert size={18} className="text-red-500" /> : <CheckCircle size={18} className="text-green-500" />}
+                {study.isDebunked ? (
+                  <ShieldAlert size={20} className="text-red-500 animate-pulse" />
+                ) : (
+                  <CheckCircle size={20} className="text-green-500/50" />
+                )}
               </div>
-              <h3 className="text-xl font-bold mb-2 leading-tight text-slate-100">{study.title}</h3>
-              <p className="text-xs font-mono text-transBlue mb-3">{study.org}</p>
-              <p className="text-sm text-slate-400 leading-relaxed mb-6">{study.desc}</p>
+
+              <h3 className="text-xl font-bold mb-3 leading-tight text-white group-hover:text-transBlue transition-colors">
+                {study.title}
+              </h3>
+
+              <div className="flex items-center gap-2 mb-4">
+                <span className="text-xs font-mono bg-slate-900 px-2 py-1 rounded border border-white/5 text-slate-400">
+                  {study.org}
+                </span>
+                {study.year && <span className="text-xs text-slate-600 font-bold">{study.year}</span>}
+              </div>
+
+              <p className="text-sm text-slate-400 leading-relaxed mb-8">
+                {study.desc}
+              </p>
             </div>
 
             <a
               href={study.link}
               target="_blank"
-              className="flex items-center justify-center gap-2 w-full py-3 bg-white/5 rounded-xl text-xs font-black uppercase tracking-widest hover:bg-white/10 transition-colors border border-white/5"
+              rel="noopener noreferrer"
+              className={`flex items-center justify-center gap-3 w-full py-4 rounded-xl text-xs font-black uppercase tracking-widest transition-all border ${study.isDebunked
+                  ? 'border-red-500/50 text-red-500 hover:bg-red-500 hover:text-white'
+                  : 'border-white/10 bg-white/5 hover:bg-transBlue hover:text-slate-950 hover:border-transBlue'
+                }`}
             >
-              Access Study <ExternalLink size={14} />
+              Examine Source <ExternalLink size={14} />
             </a>
           </div>
         ))}
       </div>
+
+      {/* Empty State */}
+      {filteredStudies.length === 0 && (
+        <div className="text-center py-20 glass-card">
+          <Info className="mx-auto text-slate-600 mb-4" size={48} />
+          <h3 className="text-xl font-bold text-slate-500">No studies found matching your criteria.</h3>
+          <p className="text-slate-600">Try adjusting your search or filters.</p>
+        </div>
+      )}
     </div>
   );
 };
