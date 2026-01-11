@@ -1,0 +1,23 @@
+[
+  {
+    "category": "Validity",
+    "title": "American Medical Association Statement",
+    "org": "AMA",
+    "desc": "Affirms the medical necessity of gender-affirming care and the validity of trans identities.",
+    "link": "https://www.ama-assn.org/press-center/press-releases/ama-reinforces-opposition-restrictions-transgender-medical-care"
+  },
+  {
+    "category": "Transition Outcomes",
+    "title": "Longitudinal Study on Puberty Suppression",
+    "org": "Pediatrics",
+    "desc": "7+ year study showing steady improvement in psychological functioning with gender-affirming treatment.",
+    "link": "https://pediatrics.aappublications.org/content/134/4/696"
+  },
+  {
+    "category": "Detransition and Regret",
+    "title": "Persistence of Gender Identity 5 Years After Social Transition",
+    "org": "Pediatrics (2022)",
+    "desc": "Study of 317 trans kids: 94% still identified as binary trans after 5 years; only 2.5% detransitioned.",
+    "link": "https://publications.aap.org/pediatrics/article/doi/10.1542/peds.2021-056082/186992/Gender-Identity-5-Years-After-Social-Transition"
+  }
+]
