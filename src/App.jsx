@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Lactation from './pages/Biology/Lactation';
 
 // Placeholder components - we will build these next
 const Home = () => (
@@ -30,6 +31,7 @@ export default function App() {
         <main className="max-w-7xl mx-auto py-10">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/biology/lactation" element={<Lactation />} />
             {/* We will add more routes here as we build the pages */}
           </Routes>
         </main>
