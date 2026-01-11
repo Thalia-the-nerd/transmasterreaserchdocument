@@ -1,23 +1,389 @@
 [
   {
-    "category": "Validity",
-    "title": "American Medical Association Statement",
-    "org": "AMA",
-    "desc": "Affirms the medical necessity of gender-affirming care and the validity of trans identities.",
-    "link": "https://www.ama-assn.org/press-center/press-releases/ama-reinforces-opposition-restrictions-transgender-medical-care"
+    "category": "Institutional Validity & Consensus",
+    "title": "Transgender Issues",
+    "org": "American Psychological Association (APA)",
+    "year": 2024,
+    "desc": "Comprehensive overview of transgender issues including gender identity, gender expression, and clinical practice guidelines.",
+    "link": "https://www.apa.org/topics/lgbt/transgender",
+    "isDebunked": false
   },
   {
-    "category": "Transition Outcomes",
-    "title": "Longitudinal Study on Puberty Suppression",
+    "category": "Institutional Validity & Consensus",
+    "title": "Gender Identity Resolution",
+    "org": "American Psychological Association (APA)",
+    "year": 2008,
+    "desc": "APA resolution recognizing the efficacy, benefit and medical necessity of gender transition treatments for appropriately evaluated individuals.",
+    "link": "https://www.apa.org/about/policy/resolution-gender-identity.pdf",
+    "isDebunked": false
+  },
+  {
+    "category": "Institutional Validity & Consensus",
+    "title": "Orientation and Gender Diversity in Youth",
+    "org": "American Psychological Association (APA)",
+    "year": 2024,
+    "desc": "Policy statement on supporting gender diverse youth and opposing discrimination.",
+    "link": "https://www.apa.org/about/policy/orientation-diversity",
+    "isDebunked": false
+  },
+  {
+    "category": "Institutional Validity & Consensus",
+    "title": "LGBTQ Booklet",
+    "org": "American Psychological Association (APA)",
+    "year": 2024,
+    "desc": "Educational booklet providing information about LGBTQ issues, mental health, and affirming care.",
+    "link": "https://www.apa.org/about/policy/booklet.pdf",
+    "isDebunked": false
+  },
+  {
+    "category": "Institutional Validity & Consensus",
+    "title": "Caring for Transgender Children",
+    "org": "Human Rights Campaign (HRC)",
+    "year": 2024,
+    "desc": "Guide for supporting and caring for transgender children with recommendations for families, educators, and healthcare providers.",
+    "link": "https://assets2.hrc.org/files/documents/SupportingCaringforTransChildren.pdf",
+    "isDebunked": false
+  },
+  {
+    "category": "Institutional Validity & Consensus",
+    "title": "Gender Dysphoria Overview",
+    "org": "NHS (UK)",
+    "year": 2024,
+    "desc": "Official NHS guidance on gender dysphoria, including symptoms, diagnosis, and treatment options.",
+    "link": "https://www.nhs.uk/conditions/gender-dysphoria/",
+    "isDebunked": false
+  },
+  {
+    "category": "Institutional Validity & Consensus",
+    "title": "Position Statement on Attempts to Change Sexual Orientation, Gender Identity, or Gender Expression",
+    "org": "American Psychoanalytic Association",
+    "year": 2012,
+    "desc": "Position statement opposing any psychiatric treatment that attempts to change sexual orientation or gender identity.",
+    "link": "http://www.apsa.org/content/2012-position-statement-attempts-change-sexual-orientation-gender-identity-or-gender",
+    "isDebunked": false
+  },
+  {
+    "category": "Institutional Validity & Consensus",
+    "title": "Transgender Identity Reclassification",
+    "org": "World Health Organization (WHO)",
+    "year": 2019,
+    "desc": "WHO removes transgender identity from mental disorders classification, recognizing it as a sexual health condition instead.",
+    "link": "https://time.com/5596845/world-health-organization-transgender-identity/",
+    "isDebunked": false
+  },
+  {
+    "category": "Institutional Validity & Consensus",
+    "title": "UN Free & Equal Campaign",
+    "org": "United Nations",
+    "year": 2024,
+    "desc": "UN campaign promoting equal rights and fair treatment for LGBTQ people worldwide.",
+    "link": "https://www.unfe.org/about/",
+    "isDebunked": false
+  },
+  {
+    "category": "Institutional Validity & Consensus",
+    "title": "Memorandum of Understanding on Conversion Therapy",
+    "org": "BACP (UK)",
+    "year": 2021,
+    "desc": "Agreement among UK professional bodies opposing conversion therapy and supporting affirmative approaches to gender identity.",
+    "link": "https://www.bacp.co.uk/media/11738/mou2-reva-0421.pdf",
+    "isDebunked": false
+  },
+  {
+    "category": "Transition Outcomes & Mental Health",
+    "title": "Systematic Review of Transgender Wellbeing",
+    "org": "Cornell University",
+    "year": 2018,
+    "desc": "Meta-analysis of 55 studies showing that gender transition improves the wellbeing of transgender people, with 51 studies finding positive effects and only 4 showing mixed or no results.",
+    "link": "https://whatweknow.inequality.cornell.edu/topics/lgbt-equality/what-does-the-scholarly-research-say-about-the-well-being-of-transgender-people/",
+    "isDebunked": false
+  },
+  {
+    "category": "Transition Outcomes & Mental Health",
+    "title": "Literature Review of Gender Dysphoria Treatment",
+    "org": "Taylor & Francis Online",
+    "year": 2016,
+    "desc": "Review of 38 studies examining outcomes of gender transition, finding significant improvements in quality of life and mental health.",
+    "link": "https://www.tandfonline.com/doi/full/10.3109/09540261.2015.1115753",
+    "isDebunked": false
+  },
+  {
+    "category": "Transition Outcomes & Mental Health",
+    "title": "Quality of Life and Affirmed Treatment",
+    "org": "PubMed Central (PMC)",
+    "year": 2018,
+    "desc": "Study demonstrating improved quality of life following gender-affirming medical treatments.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6223813/",
+    "isDebunked": false
+  },
+  {
+    "category": "Transition Outcomes & Mental Health",
+    "title": "Meta-analysis of Satisfaction with Gender Surgery",
+    "org": "Wiley Online Library",
+    "year": 2009,
+    "desc": "Review of 28 studies showing high satisfaction rates with gender-affirming surgeries.",
+    "link": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2265.2009.03625.x",
+    "isDebunked": false
+  },
+  {
+    "category": "Transition Outcomes & Mental Health",
+    "title": "24-year Longitudinal Study on Wellbeing",
+    "org": "PubMed",
+    "year": 2015,
+    "desc": "Long-term follow-up study showing sustained improvements in wellbeing after gender transition.",
+    "link": "https://pubmed.ncbi.nlm.nih.gov/25690443/",
+    "isDebunked": false
+  },
+  {
+    "category": "Transition Outcomes & Mental Health",
+    "title": "7-year Effectiveness of Affirming Care",
     "org": "Pediatrics",
-    "desc": "7+ year study showing steady improvement in psychological functioning with gender-affirming treatment.",
-    "link": "https://pediatrics.aappublications.org/content/134/4/696"
+    "year": 2014,
+    "desc": "Study demonstrating steady improvement in psychological functioning over 7+ years with gender-affirming treatment in youth.",
+    "link": "https://pediatrics.aappublications.org/content/134/4/696",
+    "isDebunked": false
   },
   {
-    "category": "Detransition and Regret",
-    "title": "Persistence of Gender Identity 5 Years After Social Transition",
-    "org": "Pediatrics (2022)",
-    "desc": "Study of 317 trans kids: 94% still identified as binary trans after 5 years; only 2.5% detransitioned.",
-    "link": "https://publications.aap.org/pediatrics/article/doi/10.1542/peds.2021-056082/186992/Gender-Identity-5-Years-After-Social-Transition"
+    "category": "Detransition & Surgery Regret Rates",
+    "title": "Desistance and Transition Persistence",
+    "org": "JAMA Pediatrics",
+    "year": 2022,
+    "desc": "Study examining factors related to persistence and desistance in transgender youth.",
+    "link": "https://jamanetwork.com/journals/jamapediatrics/article-abstract/2815512",
+    "isDebunked": false
+  },
+  {
+    "category": "Detransition & Surgery Regret Rates",
+    "title": "Critique of Older Desistance Studies",
+    "org": "Taylor & Francis Online",
+    "year": 2018,
+    "desc": "Critical analysis of methodological flaws in older studies claiming high desistance rates, showing these studies often misclassified subjects.",
+    "link": "https://www.tandfonline.com/doi/abs/10.1080/15532739.2018.1456390",
+    "isDebunked": false
+  },
+  {
+    "category": "Detransition & Surgery Regret Rates",
+    "title": "Analysis of 2015 Transgender Survey - Detransition Drivers",
+    "org": "PubMed Central (PMC)",
+    "year": 2021,
+    "desc": "Analysis showing most detransition is driven by external factors like discrimination and lack of support, not regret about gender identity.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8213007/",
+    "isDebunked": false
+  },
+  {
+    "category": "Detransition & Surgery Regret Rates",
+    "title": "50-year Study on Gender Reassignment Surgery Regret",
+    "org": "PubMed",
+    "year": 2014,
+    "desc": "Long-term study of gender reassignment surgery outcomes showing only 2.2% regret rate.",
+    "link": "https://pubmed.ncbi.nlm.nih.gov/24872188/",
+    "isDebunked": false
+  },
+  {
+    "category": "Detransition & Surgery Regret Rates",
+    "title": "Meta-analysis of 27 Studies on Regret Rate",
+    "org": "PubMed Central (PMC)",
+    "year": 2021,
+    "desc": "Comprehensive meta-analysis of 27 studies showing an overall regret rate of approximately 1% following gender-affirming surgery.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8099405/",
+    "isDebunked": false
+  },
+  {
+    "category": "Biological & Brain Sex Science",
+    "title": "Neurobiology Overlap in Transgender Individuals",
+    "org": "PubMed Central (PMC)",
+    "year": 2018,
+    "desc": "Study showing brain structure patterns in transgender individuals share characteristics with their experienced gender.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6235900/",
+    "isDebunked": false
+  },
+  {
+    "category": "Biological & Brain Sex Science",
+    "title": "Cortical Thickness in Transgender Youth",
+    "org": "PubMed Central (PMC)",
+    "year": 2022,
+    "desc": "Research examining cortical thickness patterns in transgender youth, finding neurobiological correlates of gender identity.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8955456/",
+    "isDebunked": false
+  },
+  {
+    "category": "Biological & Brain Sex Science",
+    "title": "Functional Connectivity Study",
+    "org": "PubMed Central (PMC)",
+    "year": 2009,
+    "desc": "Study of brain functional connectivity patterns showing alignment with gender identity rather than assigned sex.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2754583/",
+    "isDebunked": false
+  },
+  {
+    "category": "Biological & Brain Sex Science",
+    "title": "Bone Structure & Hormones in Early Transition",
+    "org": "PubMed",
+    "year": 2008,
+    "desc": "Research on bone density and structure changes with hormone therapy during early transition.",
+    "link": "https://pubmed.ncbi.nlm.nih.gov/18835591/",
+    "isDebunked": false
+  },
+  {
+    "category": "Biological & Brain Sex Science",
+    "title": "Bone Microstructure in Trans Women",
+    "org": "PubMed",
+    "year": 2021,
+    "desc": "Study examining bone microarchitecture in transgender women on hormone therapy.",
+    "link": "https://pubmed.ncbi.nlm.nih.gov/33507568/",
+    "isDebunked": false
+  },
+  {
+    "category": "Biological & Brain Sex Science",
+    "title": "The Sex Spectrum",
+    "org": "Nature",
+    "year": 2015,
+    "desc": "Scientific article explaining that biological sex exists on a spectrum rather than as a simple binary.",
+    "link": "https://www.nature.com/articles/518288a",
+    "isDebunked": false
+  },
+  {
+    "category": "Trans People in Sports",
+    "title": "Meta-analysis on Athletic Advantage",
+    "org": "PubMed Central (PMC)",
+    "year": 2017,
+    "desc": "Meta-analysis examining athletic performance in transgender individuals after hormone therapy.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5357259/",
+    "isDebunked": false
+  },
+  {
+    "category": "Trans People in Sports",
+    "title": "Performance in U.S. Air Force Personnel",
+    "org": "British Journal of Sports Medicine (BMJ)",
+    "year": 2021,
+    "desc": "Study of fitness test performance in transgender Air Force personnel before and after transition, showing performance changes align with hormone levels.",
+    "link": "https://bjsm.bmj.com/content/55/11/577",
+    "isDebunked": false
+  },
+  {
+    "category": "Discrimination, Safety & Bathrooms",
+    "title": "Effects of Discrimination on Health",
+    "org": "Cornell University",
+    "year": 2018,
+    "desc": "Systematic review showing discrimination has significant negative effects on physical and mental health of LGBT people.",
+    "link": "https://whatweknow.inequality.cornell.edu/topics/lgbt-equality/what-does-scholarly-research-say-about-the-effects-of-discrimination-on-the-health-of-lgbt-people/",
+    "isDebunked": false
+  },
+  {
+    "category": "Discrimination, Safety & Bathrooms",
+    "title": "Crime and Privacy in Restrooms Analysis",
+    "org": "Springer",
+    "year": 2018,
+    "desc": "Study finding no increase in safety or privacy incidents in jurisdictions allowing transgender people to use facilities matching their gender identity.",
+    "link": "https://link.springer.com/article/10.1007%2Fs13178-018-0335-z",
+    "isDebunked": false
+  },
+  {
+    "category": "Discrimination, Safety & Bathrooms",
+    "title": "Bathroom Bill Discriminatory Effects",
+    "org": "PubMed Central (PMC)",
+    "year": 2021,
+    "desc": "Analysis of harmful effects of bathroom bills on transgender individuals' mental health and wellbeing.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8022685/",
+    "isDebunked": false
+  },
+  {
+    "category": "Discrimination, Safety & Bathrooms",
+    "title": "2018 LGBTQ Youth Report",
+    "org": "Human Rights Campaign (HRC)",
+    "year": 2018,
+    "desc": "Comprehensive report on experiences of LGBTQ youth including discrimination, safety concerns, and mental health impacts.",
+    "link": "https://assets2.hrc.org/files/assets/resources/2018-YouthReport-NoVid.pdf",
+    "isDebunked": false
+  },
+  {
+    "category": "Trans Youth Specific Research",
+    "title": "Gender Identity 5 Years After Social Transition",
+    "org": "Pediatrics",
+    "year": 2022,
+    "desc": "Study of 317 transgender children showing 94% still identified as binary transgender 5 years after social transition, with only 2.5% retransitioning.",
+    "link": "https://publications.aap.org/pediatrics/article/doi/10.1542/peds.2021-056082/186992/Gender-Identity-5-Years-After-Social-Transition",
+    "isDebunked": false
+  },
+  {
+    "category": "Trans Youth Specific Research",
+    "title": "Access to Care and 73% Reduction in Suicidality",
+    "org": "JAMA Network Open",
+    "year": 2022,
+    "desc": "Study demonstrating that access to gender-affirming care is associated with a 73% reduction in suicidal ideation among transgender youth.",
+    "link": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2789423",
+    "isDebunked": false
+  },
+  {
+    "category": "Trans Youth Specific Research",
+    "title": "Puberty Blockers & Long-term Mental Health",
+    "org": "PubMed",
+    "year": 2020,
+    "desc": "Research on long-term mental health outcomes of puberty suppression in transgender youth showing positive effects.",
+    "link": "https://pubmed.ncbi.nlm.nih.gov/31974216/",
+    "isDebunked": false
+  },
+  {
+    "category": "Lactation & Medical Science",
+    "title": "Induced Lactation Case Study",
+    "org": "PubMed Central (PMC)",
+    "year": 2018,
+    "desc": "First documented case study of successful induced lactation in a transgender woman achieving therapeutic milk production levels.",
+    "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5779241/",
+    "isDebunked": false
+  },
+  {
+    "category": "Lactation & Medical Science",
+    "title": "Additional Lactation Case Study",
+    "org": "Journal of Clinical Endocrinology & Metabolism (JCEM)",
+    "year": 2021,
+    "desc": "Additional case study documenting successful lactation induction in transgender women.",
+    "link": "https://academic.oup.com/jcem/article/106/5/e2047/6123860",
+    "isDebunked": false
+  },
+  {
+    "category": "Lactation & Medical Science",
+    "title": "Domperidone Safety for Lactation",
+    "org": "Breastfeeding Network",
+    "year": 2024,
+    "desc": "Information on the safety and use of domperidone for lactation induction.",
+    "link": "https://www.breastfeedingnetwork.org.uk/domperidone/",
+    "isDebunked": false
+  },
+  {
+    "category": "Lactation & Medical Science",
+    "title": "Nutritional Content of Trans Woman's Milk",
+    "org": "SagePub",
+    "year": 2023,
+    "desc": "Study analyzing the nutritional content and composition of milk produced by transgender women.",
+    "link": "https://journals.sagepub.com/doi/10.1177/08903344231170559",
+    "isDebunked": false
+  },
+  {
+    "category": "Debunked / Flawed Studies",
+    "title": "ROGD - Flawed Parental Survey",
+    "org": "PLOS ONE (Littman)",
+    "year": 2018,
+    "desc": "Methodologically flawed study claiming \"rapid onset gender dysphoria\" based solely on parental surveys from biased sources, not validated clinical data. Widely criticized by medical community.",
+    "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0202330",
+    "isDebunked": true
+  },
+  {
+    "category": "Debunked / Flawed Studies",
+    "title": "ROGD - Second Flawed Parental Survey",
+    "org": "Springer",
+    "year": 2023,
+    "desc": "Another methodologically flawed study promoting the discredited \"rapid onset gender dysphoria\" concept using biased parental surveys.",
+    "link": "https://link.springer.com/article/10.1007/s10508-023-02576-9",
+    "isDebunked": true
+  },
+  {
+    "category": "Debunked / Flawed Studies",
+    "title": "Swedish Mortality Study (Commonly Misinterpreted)",
+    "org": "PubMed",
+    "year": 2011,
+    "desc": "Often misinterpreted study comparing post-transition individuals to general population (not pre-transition baseline). Authors have clarified it does not show transition causes harm, but anti-trans activists frequently misrepresent findings.",
+    "link": "https://www.ncbi.nlm.nih.gov/pubmed/21364939",
+    "isDebunked": true
   }
 ]
