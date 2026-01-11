@@ -6,6 +6,7 @@ import Lactation from './pages/Biology/Lactation';
 import DataCenter from './pages/Sociology/DataCenter';
 import Politics from './pages/Legal/Politics';
 import Neurobiology from './pages/Biology/Neurobiology';
+import Rhetoric from './pages/Practical/Rhetoric';
 
 // Simple Home Component
 const Home = () => (
@@ -49,6 +50,7 @@ export default function App() {
             <Route path="/biology/neuro" element={<Neurobiology />} />
             <Route path="/sociology/data" element={<DataCenter />} />
             <Route path="/legal/politics" element={<Politics />} />
+            <Route path="/practical/rhetoric" element={<Rhetoric />} />
           </Routes>
         </main>
       </div>
